@@ -1,0 +1,187 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  background-image: url(resources/bg.jpg);
+  background-size: cover;
+  margin: 10px 10%;
+}
+a {
+  text-decoration: none;
+  color: rgb(78, 155, 255);
+}
+a:hover {
+  font-weight: bold;
+  font-size: 110%;
+}
+h1 {
+  font-size: 250%;
+}
+h2 {
+  padding: 0 10px;
+  text-align: left;
+  color: honeydew;
+}
+h1,
+h2 {
+  font-family: "Cabin Sketch", cursive;
+  margin: 0;
+}
+
+.profile .content-wrap {
+  position: fixed;
+  max-width: 20%;
+  background-color: rgba(4, 72, 219, 0.329);
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  align-content: center;
+  color: azure;
+  border-radius: 5px;
+}
+.profile h2 {
+  padding: 10px;
+  font-size: 170%;
+  line-height: 1;
+  text-align: center;
+}
+.profile a {
+  display: inline-block;
+  width: max-content;
+  font-size: 110%;
+  padding: 10px;
+  color: azure;
+  text-decoration: none;
+}
+
+.profile a:hover {
+  outline: 2px solid;
+  font-weight: bold;
+}
+.profile p {
+  padding: 10px 10px 5px 10px;
+  margin: -10px 10px 10px 10px;
+}
+.profile i {
+  padding: 0px 5px 0 5px;
+  font-size: 20px;
+  margin: 5px 0px 10px 0px;
+}
+
+.about {
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin: 1% 0 1% 26%;
+  border: 1px solid rgb(0, 43, 100);
+  border-radius: 5px;
+}
+.about h2 {
+  background-color: rgb(78, 155, 255);
+}
+.about h3 {
+  text-align: center;
+  margin: auto;
+  color: rgb(78, 155, 255);
+}
+.about i {
+  font-size: 40px;
+}
+.about p ~ p {
+  margin: 10px;
+  text-align: left;
+}
+.about-item {
+  display: grid;
+  grid-template-columns: 0.7fr 2fr;
+  border-bottom: 1px solid rgb(111, 174, 255);
+  margin: 10px 20px;
+}
+.about-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 10px 10px 10px;
+  margin: 10px 20px;
+}
+.about-details h3 {
+  background-color: rgba(255, 255, 255, 0.02);
+  color: black;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.about-details h1 {
+  color: rgb(111, 174, 255);
+  text-align: center;
+  margin: auto;
+}
+
+#cur .about-details h1 {
+  font-size: 150%;
+}
+
+#cur .about-details i {
+  font-size: 100%;
+}
+
+#fs .about-item {
+  grid-template-columns: 1fr 2fr 1fr;
+}
+img {
+  border-radius: 100px;
+  width: 50%;
+}
+
+#lab .about-item {
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  text-align: center;
+}
+#lab img {
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+}
+#ra .about-item {
+  grid-template-columns: 1fr 2fr;
+}
+
+@media screen and (max-width: 749px) {
+  /*small devices*/
+  .profile .content-wrap {
+    position: static;
+    max-width: 100%;
+    margin: 0;
+  }
+  .about {
+    position: static;
+    width: 100%;
+    margin: 20px 0;
+    text-align: center;
+  }
+  img {
+    width: 30%;
+  }
+  .about-item,
+  .about-details,
+  #fs .about-item,
+  #ra .about-item,
+  #lab .about-item {
+    grid-template-columns: auto;
+    text-align: center;
+  }
+  #lab img {
+    width: 60%;
+  }
+  #fs p ~ p {
+    text-align: center;
+    margin-top: 0;
+  }
+}
