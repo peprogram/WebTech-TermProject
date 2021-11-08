@@ -153,8 +153,18 @@ img {
   grid-template-columns: 1fr 2fr;
 }
 
+footer {
+  background: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  margin-bottom: -10px;
+  border-radius: 5px;
+}
+
 @media screen and (max-width: 749px) {
   /*small devices*/
+  body {
+    margin: 10px 5%;
+  }
   .profile .content-wrap {
     position: static;
     max-width: 100%;
